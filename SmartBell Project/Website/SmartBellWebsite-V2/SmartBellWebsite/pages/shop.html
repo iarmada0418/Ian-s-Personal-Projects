@@ -1,0 +1,103 @@
+<!-- This section includes external JavaScript and CSS files for the shop. -->
+<!--
+<script src="../js/shop_scripts.js"></script>
+<link rel="stylesheet" href="../css/shop_styles.css">
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to the stylesheets for the page -->
+    <link rel="stylesheet" href="../css/shop_styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Title of the page -->
+    <title>Store</title>
+</head>
+
+<body>
+    <!-- Navigation section -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <!-- Brand/logo and toggle button for responsive navigation -->
+            <a class="navbar-brand fw-bold" href="../index.html">Wave by Smart Bell</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="../index.html#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="../index.html#download">Download</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="cart.html">My Cart</a></li>
+                </ul>
+                
+                <!-- Contact Us button with onclick function to open Google Form -->
+                <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" onclick="openGoogleForm()">
+                  <span class="d-flex align-items-center">
+                      <i class="bi-chat-text-fill me-2"></i>
+                      <span class="small">Contact Us</span>
+                  </span>
+              </button>
+              
+              <!-- JavaScript function to open Google Form in a new window -->
+              <script>
+                  function openGoogleForm() {
+                      // Redirect to the Google Form URL
+                      window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeETSTfvOjJzhymo01wyLJ2OINkdPtLQ_O6GnsnZFRoYVhiZA/viewform?embedded=true';
+                  }
+              </script>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- External JavaScript files with "defer" attribute for asynchronous loading -->
+    <script src="../js/shop_scripts.js" defer></script>
+    <script src="../js/scripts.js" defer></script>
+
+    <!-- Header section with the store name -->
+    <header>
+        <h1>Smart Bell Store</h1>
+    </header>
+
+    <!-- Product 1 information and Add to Cart button -->
+    <div class="product" id="product1">
+        <img src="../assets/img/pi3.jpg" alt="Product 1 Image">
+        <div class="product-info">
+            <h2>Raspberry Pi3</h2>
+            <p class="price">$69.99</p>
+            <button class="addToCartButton" onclick="addToCartButtonClick('Raspberry Pi3', 69.99)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product 2 information and Add to Cart button -->
+    <div class="product" id="product2">
+        <img src="../assets/img/pi0.jpg" alt="Product 2 Image">
+        <div class="product-info">
+            <h2>Raspberry Pi0</h2>
+            <p class="price">$49.99</p>
+            <button class="addToCartButton" onclick="addToCartButtonClick('Raspberry Pi0', 49.99)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart container displaying item count, total cost, and a View Cart button -->
+    <div class="cart-container" id="cartContainer">
+        <span id="cartCount">0 items in cart</span>
+        <br>
+        <span id="cartTotal">Total cost: $0.00</span>
+        <br>
+        <button class="addToCartButton" id="cart" onclick="window.location.href='cart.html'">View Cart</button>
+    </div>
+</body>
+
+</html>
