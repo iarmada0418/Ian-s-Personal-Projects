@@ -1,0 +1,87 @@
+<!-- This section includes external JavaScript and CSS files for the shop. -->
+<!--
+<script src="../js/shop_scripts.js"></script>
+<link rel="stylesheet" href="../css/shop_styles.css">
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to the stylesheets for the page -->
+    <link rel="stylesheet" href="../css/shop_styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Title of the page -->
+    <title>Store</title>
+</head>
+
+<body>
+    <!-- Navigation section -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <!-- Brand/logo and toggle button for responsive navigation -->
+            <a class="navbar-brand fw-bold" href="../index.html">Wave by Smart Bell</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="../index.html#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="../index.html#download">Download</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="cart.html">My Cart</a></li>
+                </ul>
+                
+                <!-- Contact Us button with onclick function to open Google Form -->
+                <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" onclick="openGoogleForm()">
+                  <span class="d-flex align-items-center">
+                      <i class="bi-chat-text-fill me-2"></i>
+                      <span class="small">Contact Us</span>
+                  </span>
+              </button>
+              
+              <!-- JavaScript function to open Google Form in a new window -->
+              <script>
+                  function openGoogleForm() {
+                      // Redirect to the Google Form URL
+                      window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeETSTfvOjJzhymo01wyLJ2OINkdPtLQ_O6GnsnZFRoYVhiZA/viewform?embedded=true';
+                  }
+              </script>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- External JavaScript files with "defer" attribute for asynchronous loading -->
+    <script src="../js/shop_scripts.js" defer></script>
+    <script src="../js/scripts.js" defer></script>
+
+    <!-- Header section  -->
+    <header>
+        <h1>User Manual</h1>
+    </header>
+
+	<ol>
+        <li>Ensure your device is plugged in a desired location</li>
+        <li>Download the SmartBell Application</li>
+        <li>Create/Log in to an account</li>
+        <li>Click Add device</li>
+        <li>Enter serial code for your product as well as email</li>
+        <li>Once code is inputted, you should be able to see your live feed from your device. Contact support if you
+            are unable to see your live feed</li>
+        <li>To save/record footage click button accordingly</li>
+        <li>Check your email to view footage/image. Contact support if you are unable to receive your footage/image</li>
+    </ol>
+
+    
+
+</html>

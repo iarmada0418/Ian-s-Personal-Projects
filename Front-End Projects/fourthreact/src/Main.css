@@ -1,0 +1,28 @@
+.main-content{
+    padding: 57px 27px;
+    background-image: url(./logo.svg);
+    background-position: right 75%;
+    background-repeat: no-repeat;
+}
+
+.Main--title {
+    color: white;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.Main--list {
+    margin-top: 46px;
+    color: white;
+    max-width: 400px;
+}
+
+.Main--list > li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.Main--list > li::marker {
+    color: #61dafb;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #2b2e2b;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  background-color: #21222A;
+  padding: 30px 25px;
+}
+
+.nav--logo_text, .nav--logo_title{
+  margin: 0;
+}
+
+.logo {
+  height: 30px;
+}
+
+.nav--logo_text {
+  margin-right: auto;
+  color: #61dbfb;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav--logo_title {
+  color: white;
+  font-weight: 600;
+}
